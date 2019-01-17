@@ -1,3 +1,4 @@
+@import "variables.less";
 /*ROW -IN*/
 .row-in i {
   font-size:24px;
@@ -1872,13 +1873,13 @@ ul#themecolors {
   text-align: center;
   }
 .default-theme{
-      background:#fb9678;
+      background:@danger;
 } 
 .green-theme{
-      background:#00c292;
+      background:@success;
 } 
 .yellow-theme{
-      background:#a0aec4;
+      background:@yellow;
 } 
 .blue-theme{
       background:@info;
@@ -1891,24 +1892,24 @@ ul#themecolors {
 }
 .default-dark-theme{
     background: #4f5467; /* Old browsers */
-    background: -moz-linear-gradient(left, #4f5467 0%, #4f5467 23%, #fb9678 23%, #fb9678 99%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(left, #4f5467 0%,#4f5467 23%,#fb9678 23%,#fb9678 99%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to right, #4f5467 0%,#4f5467 23%,#fb9678 23%,#fb9678 99%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4f5467', endColorstr='#fb9678',GradientType=1 ); /* IE6-9 */
+    background: -moz-linear-gradient(left, #4f5467 0%, #4f5467 23%, @danger 23%, @danger 99%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, #4f5467 0%,#4f5467 23%,@danger 23%,@danger 99%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, #4f5467 0%,#4f5467 23%,@danger 23%,@danger 99%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4f5467', endColorstr='@danger',GradientType=1 ); /* IE6-9 */
 } 
 .green-dark-theme{
     background: #4f5467; /* Old browsers */
-    background: -moz-linear-gradient(left, #4f5467 0%, #4f5467 23%, #00c292 23%, #00c292 99%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(left, #4f5467 0%,#4f5467 23%,#00c292 23%,#00c292 99%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to right, #4f5467 0%,#4f5467 23%,#00c292 23%,#00c292 99%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4f5467', endColorstr='#00c292',GradientType=1 ); /* IE6-9 */
+    background: -moz-linear-gradient(left, #4f5467 0%, #4f5467 23%, @success 23%, @success 99%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, #4f5467 0%,#4f5467 23%,@success 23%,@success 99%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, #4f5467 0%,#4f5467 23%,@success 23%,@success 99%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4f5467', endColorstr='@success',GradientType=1 ); /* IE6-9 */
 }
 .yellow-dark-theme{
    background: #4f5467; /* Old browsers */
-    background: -moz-linear-gradient(left, #4f5467 0%, #4f5467 23%, #a0aec4 23%, #a0aec4 99%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(left, #4f5467 0%,#4f5467 23%,#a0aec4 23%,#a0aec4 99%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to right, #4f5467 0%,#4f5467 23%,#a0aec4 23%,#a0aec4 99%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4f5467', endColorstr='#a0aec4',GradientType=1 ); /* IE6-9 */
+    background: -moz-linear-gradient(left, #4f5467 0%, #4f5467 23%, @yellow 23%, @yellow 99%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, #4f5467 0%,#4f5467 23%,@yellow 23%,@yellow 99%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, #4f5467 0%,#4f5467 23%,@yellow 23%,@yellow 99%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4f5467', endColorstr='@yellow',GradientType=1 ); /* IE6-9 */
 }  
 .blue-dark-theme{
     background: #4f5467; /* Old browsers */
@@ -2597,4 +2598,37 @@ ul.list-icons{
   margin:0px;
 }
 }
+/* r-icon-status */
 
+.r-icon-stats{
+  i{
+    width: 66px;
+    height: 66px;
+    padding:20px;
+    text-align: center;
+    color:@white;
+    font-size:24px;
+    display:inline-block;
+    border-radius:100%;
+    vertical-align:top;
+      background: @megna;
+  }
+  .bodystate{
+      padding-left:20px;
+      display:inline-block;
+      vertical-align:middle;
+      h4{
+        margin-bottom:0px;
+      }
+
+  }
+}
+.ecomm-donute svg text {
+    font-family: @basefont1 !important;
+    font-weight: 200!important;
+    color: @bodytext !important;
+}
+
+.minus-mar{
+  margin:40px -25px -27px;
+}

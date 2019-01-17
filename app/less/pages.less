@@ -370,19 +370,19 @@
         -webkit-transition: -webkit-transform 0.3s;
         transition: transform 0.3s;
     }
-    li:first-child.tab-current ~ li:last-child::before {
+    li:first-child.tab-current~li:last-child::before {
         -webkit-transform: translate3d(-400%, 0, 0);
         transform: translate3d(-400%, 0, 0);
     }
-    li:nth-child(2).tab-current ~ li:last-child::before {
+    li:nth-child(2).tab-current~li:last-child::before {
         -webkit-transform: translate3d(-300%, 0, 0);
         transform: translate3d(-300%, 0, 0);
     }
-    li:nth-child(3).tab-current ~ li:last-child::before {
+    li:nth-child(3).tab-current~li:last-child::before {
         -webkit-transform: translate3d(-200%, 0, 0);
         transform: translate3d(-200%, 0, 0);
     }
-    li:nth-child(4).tab-current ~ li:last-child::before {
+    li:nth-child(4).tab-current~li:last-child::before {
         -webkit-transform: translate3d(-100%, 0, 0);
         transform: translate3d(-100%, 0, 0);
     }
@@ -1453,12 +1453,12 @@ a.mytooltip {
     -webkit-box-shadow: none;
     border: 0px;
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2) !important;
-    > li > ul {
+    >li>ul {
         padding: 0;
         margin: 0;
-        > li {
+        >li {
             list-style: none;
-            > a {
+            >a {
                 display: block;
                 padding: 8px 0px;
                 clear: both;
@@ -1745,7 +1745,7 @@ table.dataTable.order-column.stripe tbody tr.even>.sorting_1 {
             transform: translateY(-50%) translateZ(0);
             -webkit-transform: translateY(-50%) translateZ(0);
             -ms-transform: translateY(-50%) translateZ(0);
-            > li {
+            >li {
                 list-style: none;
                 display: inline-block;
                 margin: 0 3px;
@@ -2134,7 +2134,7 @@ table.dataTable.order-column.stripe tbody tr.even>.sorting_1 {
     border-bottom: 1px solid @light;
 }
 
-.floating-labels select.form-control > option {
+.floating-labels select.form-control>option {
     font-size: 14px;
 }
 
@@ -2166,8 +2166,8 @@ table.dataTable.order-column.stripe tbody tr.even>.sorting_1 {
     -webkit-transition: 0.2s ease all;
 }
 
-.floating-labels .form-control:focus ~ label,
-.floating-labels .form-control:valid ~ label {
+.floating-labels .form-control:focus~label,
+.floating-labels .form-control:valid~label {
     top: -20px;
     font-size: 12px;
     color: @primary;
@@ -2199,8 +2199,8 @@ table.dataTable.order-column.stripe tbody tr.even>.sorting_1 {
     right: 50%;
 }
 
-.floating-labels .form-control:focus ~ .bar:before,
-.floating-labels .form-control:focus ~ .bar:after {
+.floating-labels .form-control:focus~.bar:before,
+.floating-labels .form-control:focus~.bar:after {
     width: 50%;
 }
 
@@ -2214,12 +2214,12 @@ table.dataTable.order-column.stripe tbody tr.even>.sorting_1 {
     opacity: 0.5;
 }
 
-.floating-labels .input-lg ~ label,
+.floating-labels .input-lg~label,
 .floating-labels .input-lg {
     font-size: 24px;
 }
 
-.floating-labels .input-sm ~ label,
+.floating-labels .input-sm~label,
 .floating-labels .input-sm {
     font-size: 16px;
 }
@@ -2239,18 +2239,18 @@ table.dataTable.order-column.stripe tbody tr.even>.sorting_1 {
     background: @danger;
 }
 
-.has-warning .form-control:focus ~ label,
-.has-warning .form-control:valid ~ label {
+.has-warning .form-control:focus~label,
+.has-warning .form-control:valid~label {
     color: @warning;
 }
 
-.has-success .form-control:focus ~ label,
-.has-success .form-control:valid ~ label {
+.has-success .form-control:focus~label,
+.has-success .form-control:valid~label {
     color: @success;
 }
 
-.has-error .form-control:focus ~ label,
-.has-error .form-control:valid ~ label {
+.has-error .form-control:focus~label,
+.has-error .form-control:valid~label {
     color: @danger;
 }
 
@@ -2258,15 +2258,21 @@ table.dataTable.order-column.stripe tbody tr.even>.sorting_1 {
     top: 0;
 }
 
+
 /* Update 2.5 */
 
-.table.dataTable, table.dataTable {
+.table.dataTable,
+table.dataTable {
     width: 99.80%!important;
 }
-table.dataTable thead .sorting_asc::after, table.dataTable thead .sorting::after, table.dataTable thead .sorting_desc::after {
+
+table.dataTable thead .sorting_asc::after,
+table.dataTable thead .sorting::after,
+table.dataTable thead .sorting_desc::after {
     float: none;
     padding-left: 10px;
 }
+
 
 /* style for realestate pages */
 
@@ -2491,27 +2497,29 @@ ul.pro-amenities li span i {
 .pro-add-form .checkbox label {
     font-weight: 100;
 }
+
+
 /*Register in steps*/
-.register-box{
+
+.register-box {
     max-width: 600px;
-    margin:0 auto;
+    margin: 0 auto;
     padding-top: 2%;
 }
-.step-register{
+
+.step-register {
     position: absolute;
     height: 100%;
-   
 }
 
-#sortable_panels .panel-heading {
-    cursor: move;
-}
 
 /* VERSION 3.1 */
 
+
 /* for icheck controls */
 
-.icolors, .icheck-list {
+.icolors,
+.icheck-list {
     padding: 0;
     margin: 0;
     list-style: none;
@@ -2532,7 +2540,6 @@ ul.pro-amenities li span i {
     content: "\2713 ";
     color: @white;
     line-height: 30px;
-
 }
 
 .icolors>li:first-child {
@@ -2589,7 +2596,7 @@ ul.pro-amenities li span i {
 }
 
 .default-steps .column-step.active {
-    background: @info;   
+    background: @info;
 }
 
 .default-steps .step-number,
@@ -2627,7 +2634,7 @@ ul.pro-amenities li span i {
 }
 
 .thin-steps .column-step.active {
-    background: @danger;   
+    background: @danger;
 }
 
 .thin-steps .step-number,
@@ -2753,12 +2760,12 @@ ul.pro-amenities li span i {
     padding-top: 30px;
     padding-bottom: 30px;
     text-align: center;
-    height:160px;
+    height: 160px;
     background: @bodycolor;
 }
 
 .numbered-bg .column-step.active {
-    background: @info;   
+    background: @info;
 }
 
 .numbered-bg .step-number,
@@ -2800,7 +2807,7 @@ ul.pro-amenities li span i {
 }
 
 .thin-steps-numbered-bg .column-step.active {
-    background: @info;   
+    background: @info;
 }
 
 .thin-steps-numbered-bg .step-number,
@@ -2909,7 +2916,7 @@ ul.pro-amenities li span i {
     webkit-transform: scale(1.3);
     -ms-transform: scale(1.3);
     -o-transform: scale(1.3);
-    transform: scale(1.3); 
+    transform: scale(1.3);
 }
 
 .line-steps .active .step-title,
@@ -3084,7 +3091,8 @@ ul.pro-amenities li span i {
     content: '';
     border: 30px solid transparent;
     border-top-color: @themecolor;
-    border-left-color: @themecolor;;    
+    border-left-color: @themecolor;
+    ;
 }
 
 .ribbon-corner.ribbon-right:before {
@@ -3338,7 +3346,9 @@ ul.pro-amenities li span i {
     border-bottom-color: @dark;
 }
 
+
 /* PLUGIN CSS OVERRIGHT */
+
 
 /* bootstrap-switch */
 
@@ -3357,35 +3367,42 @@ ul.pro-amenities li span i {
     border-top-right-radius: 2px;
 }
 
-.bootstrap-switch .bootstrap-switch-handle-off.bootstrap-switch-primary, .bootstrap-switch .bootstrap-switch-handle-on.bootstrap-switch-primary {
+.bootstrap-switch .bootstrap-switch-handle-off.bootstrap-switch-primary,
+.bootstrap-switch .bootstrap-switch-handle-on.bootstrap-switch-primary {
     color: @white;
     background: @primary;
 }
 
-.bootstrap-switch .bootstrap-switch-handle-off.bootstrap-switch-info, .bootstrap-switch .bootstrap-switch-handle-on.bootstrap-switch-info {
+.bootstrap-switch .bootstrap-switch-handle-off.bootstrap-switch-info,
+.bootstrap-switch .bootstrap-switch-handle-on.bootstrap-switch-info {
     color: @white;
     background: @info;
 }
 
-.bootstrap-switch .bootstrap-switch-handle-off.bootstrap-switch-success, .bootstrap-switch .bootstrap-switch-handle-on.bootstrap-switch-success {
+.bootstrap-switch .bootstrap-switch-handle-off.bootstrap-switch-success,
+.bootstrap-switch .bootstrap-switch-handle-on.bootstrap-switch-success {
     color: @white;
     background: @success;
 }
 
-.bootstrap-switch .bootstrap-switch-handle-off.bootstrap-switch-warning, .bootstrap-switch .bootstrap-switch-handle-on.bootstrap-switch-warning {
+.bootstrap-switch .bootstrap-switch-handle-off.bootstrap-switch-warning,
+.bootstrap-switch .bootstrap-switch-handle-on.bootstrap-switch-warning {
     color: @white;
     background: @warning;
 }
 
-.bootstrap-switch .bootstrap-switch-handle-off.bootstrap-switch-danger, .bootstrap-switch .bootstrap-switch-handle-on.bootstrap-switch-danger {
+.bootstrap-switch .bootstrap-switch-handle-off.bootstrap-switch-danger,
+.bootstrap-switch .bootstrap-switch-handle-on.bootstrap-switch-danger {
     color: @white;
     background: @danger;
 }
 
-.bootstrap-switch .bootstrap-switch-handle-off.bootstrap-switch-default, .bootstrap-switch .bootstrap-switch-handle-on.bootstrap-switch-default {
+.bootstrap-switch .bootstrap-switch-handle-off.bootstrap-switch-default,
+.bootstrap-switch .bootstrap-switch-handle-on.bootstrap-switch-default {
     color: @dark;
     background: @light;
 }
+
 
 /* lobipanel */
 
@@ -3402,7 +3419,8 @@ ul.pro-amenities li span i {
     box-shadow: none!important;
 }
 
-.lobipanel .panel-heading .dropdown .dropdown-menu>li>a:focus:hover, .lobipanel .panel-heading .dropdown .dropdown-menu>li>a:hover {
+.lobipanel .panel-heading .dropdown .dropdown-menu>li>a:focus:hover,
+.lobipanel .panel-heading .dropdown .dropdown-menu>li>a:hover {
     background: none;
     text-shadow: none;
     opacity: 0.6;
@@ -3413,6 +3431,7 @@ ul.pro-amenities li span i {
     opacity: 0.1;
     border: 1px dashed @dark;
 }
+
 
 /* date-paginator */
 
@@ -3426,7 +3445,7 @@ ul.pro-amenities li span i {
     font-family: @basefont1;
     text-align: center;
     font-size: 20px;
- }
+}
 
 .grid-stack-item-content .fa {
     font-size: 64px;

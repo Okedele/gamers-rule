@@ -606,99 +606,6 @@ hr {
 }
 
 
-/********** Card Background colors **********/
-
-.card-primary {
-    background-color: @primary;
-    border-color: @primary;
-}
-
-.card-success {
-    background-color: @success;
-    border-color: @success;
-}
-
-.card-info {
-    background-color: @info;
-    border-color: @info;
-}
-
-.card-warning {
-    background-color: @warning;
-    border-color: @warning;
-}
-
-.card-danger {
-    background-color: @danger;
-    border-color: @danger;
-}
-
-.card-secondary {
-    background-color: @inverse;
-    border-color: @inverse;
-}
-
-.card-red {
-    background-color: @red;
-    border-color: @red;
-}
-
-.card-blue {
-    background-color: @blue;
-    border-color: @blue;
-}
-
-.card-purple {
-    background-color: @purple;
-    border-color: @purple;
-}
-
-.card-megna {
-    background-color: @megna;
-    border-color: @megna;
-}
-
-.card-outline-primary {
-    border-color: @primary;
-}
-
-.card-outline-success {
-    border-color: @success;
-}
-
-.card-outline-info {
-    border-color: @info;
-}
-
-.card-outline-warning {
-    border-color: @warning;
-}
-
-.card-outline-danger {
-    border-color: @danger;
-}
-
-.card-outline-secondary {
-    border-color: @inverse;
-}
-
-.card-outline-red {
-    border-color: @red;
-}
-
-.card-outline-blue {
-    border-color: @blue;
-}
-
-.card-outline-purple {
-    border-color: @purple;
-}
-
-.card-outline-megna {
-    border-color: @megna;
-}
-
-
 /********** Background colors **********/
 
 .bg-primary {
@@ -819,7 +726,7 @@ hr {
     margin-top: 0px;
 }
 
-.dropdown-menu>li>a {
+.dropdown-menu > li > a {
     padding: 9px 20px;
 }
 
@@ -944,7 +851,7 @@ pre {
     border-radius: @radius;
 }
 
-.nav-tabs>li>a {
+.nav-tabs > li > a {
     border-radius: @radius;
     color: @dark;
     &:hover,
@@ -1057,27 +964,27 @@ pre {
 
 /********** Pagination/ Pager **********/
 
-.pagination>li:first-child>a,
-.pagination>li:first-child>span {
+.pagination > li:first-child > a,
+.pagination > li:first-child > span {
     border-bottom-left-radius: @radius;
     border-top-left-radius: @radius;
 }
 
-.pagination>li:last-child>a,
-.pagination>li:last-child>span {
+.pagination > li:last-child > a,
+.pagination > li:last-child > span {
     border-bottom-right-radius: @radius;
     border-top-right-radius: @radius;
 }
 
-.pagination>li>a,
-.pagination>li>span {
+.pagination > li > a,
+.pagination > li > span {
     color: @dark;
 }
 
-.pagination>li>a:hover,
-.pagination>li>span:hover,
-.pagination>li>a:focus,
-.pagination>li>span:focus {
+.pagination > li > a:hover,
+.pagination > li > span:hover,
+.pagination > li > a:focus,
+.pagination > li > span:focus {
     background-color: @light;
 }
 
@@ -1097,18 +1004,18 @@ pre {
     border-radius: @radius;
 }
 
-.pagination>.active>a,
-.pagination>.active>span,
-.pagination>.active>a:hover,
-.pagination>.active>span:hover,
-.pagination>.active>a:focus,
-.pagination>.active>span:focus {
+.pagination > .active > a,
+.pagination > .active > span,
+.pagination > .active > a:hover,
+.pagination > .active > span:hover,
+.pagination > .active > a:focus,
+.pagination > .active > span:focus {
     background-color: @themecolor;
     border-color: @themecolor;
 }
 
-.pager li>a,
-.pager li>span {
+.pager li > a,
+.pager li > span {
     -moz-border-radius: @radius;
     -webkit-border-radius: @radius;
     border-radius: @radius;
@@ -1207,7 +1114,6 @@ pre {
         color: @white;
         font-size: 18px;
         padding-left: 0px;
-        text-transform: uppercase;
     }
 }
 
@@ -1231,11 +1137,11 @@ pre {
     top: 15px;
 }
 
-.navbar-top-links>li {
+.navbar-top-links > li {
     float: left;
 }
 
-.navbar-top-links>li>a {
+.navbar-top-links > li > a {
     color: @white;
     padding: 0 12px;
     line-height: 60px;
@@ -1248,9 +1154,9 @@ pre {
     }
 }
 
-.nav .open>a,
-.nav .open>a:focus,
-.nav .open>a:hover {
+.nav .open > a,
+.nav .open > a:focus,
+.nav .open > a:hover {
     background: rgba(255, 255, 255, 0.2)
 }
 
@@ -1642,9 +1548,9 @@ pre {
 .btn-primary.focus:active,
 .btn-primary:active:focus,
 .btn-primary:active:hover,
-.open>.dropdown-toggle.btn-primary.focus,
-.open>.dropdown-toggle.btn-primary:focus,
-.open>.dropdown-toggle.btn-primary:hover,
+.open > .dropdown-toggle.btn-primary.focus,
+.open > .dropdown-toggle.btn-primary:focus,
+.open > .dropdown-toggle.btn-primary:hover,
 .btn-primary.focus,
 .btn-primary:focus {
     background-color: @primary ;
@@ -1657,9 +1563,9 @@ pre {
 .btn-success.focus:active,
 .btn-success:active:focus,
 .btn-success:active:hover,
-.open>.dropdown-toggle.btn-success.focus,
-.open>.dropdown-toggle.btn-success:focus,
-.open>.dropdown-toggle.btn-success:hover,
+.open > .dropdown-toggle.btn-success.focus,
+.open > .dropdown-toggle.btn-success:focus,
+.open > .dropdown-toggle.btn-success:hover,
 .btn-success.focus,
 .btn-success:focus {
     background-color: @success;
@@ -1672,9 +1578,9 @@ pre {
 .btn-info.focus:active,
 .btn-info:active:focus,
 .btn-info:active:hover,
-.open>.dropdown-toggle.btn-info.focus,
-.open>.dropdown-toggle.btn-info:focus,
-.open>.dropdown-toggle.btn-info:hover,
+.open > .dropdown-toggle.btn-info.focus,
+.open > .dropdown-toggle.btn-info:focus,
+.open > .dropdown-toggle.btn-info:hover,
 .btn-info.focus,
 .btn-info:focus {
     background-color: @info;
@@ -1687,9 +1593,9 @@ pre {
 .btn-warning.focus:active,
 .btn-warning:active:focus,
 .btn-warning:active:hover,
-.open>.dropdown-toggle.btn-warning.focus,
-.open>.dropdown-toggle.btn-warning:focus,
-.open>.dropdown-toggle.btn-warning:hover,
+.open > .dropdown-toggle.btn-warning.focus,
+.open > .dropdown-toggle.btn-warning:focus,
+.open > .dropdown-toggle.btn-warning:hover,
 .btn-warning.focus,
 .btn-warning:focus {
     background-color: @warning;
@@ -1702,9 +1608,9 @@ pre {
 .btn-danger.focus:active,
 .btn-danger:active:focus,
 .btn-danger:active:hover,
-.open>.dropdown-toggle.btn-danger.focus,
-.open>.dropdown-toggle.btn-danger:focus,
-.open>.dropdown-toggle.btn-danger:hover,
+.open > .dropdown-toggle.btn-danger.focus,
+.open > .dropdown-toggle.btn-danger:focus,
+.open > .dropdown-toggle.btn-danger:hover,
 .btn-danger.focus,
 .btn-danger:focus {
     background-color: @danger;
@@ -1720,7 +1626,7 @@ pre {
 .btn-inverse:active,
 .btn-inverse:focus,
 .btn-inverse:hover,
-.open>.dropdown-toggle.btn-inverse {
+.open > .dropdown-toggle.btn-inverse {
     background-color: @inverse;
     border: 1px solid @inverse;
     color: @white;
@@ -2448,24 +2354,24 @@ table.dataTable thead .sorting:after {
         opacity: 0;
         z-index: 1;
         outline: none !important;
-        &:disabled+label {
+        &:disabled + label {
             opacity: 0.65;
         }
     }
-    input[type="checkbox"]:focus+label {
+    input[type="checkbox"]:focus + label {
         &::before {
             outline-offset: -2px;
             outline: none;
             outline: thin dotted;
         }
     }
-    input[type="checkbox"]:checked+label {
+    input[type="checkbox"]:checked + label {
         &::after {
             content: "\f00c";
             font-family: 'FontAwesome';
         }
     }
-    input[type="checkbox"]:disabled+label {
+    input[type="checkbox"]:disabled + label {
         &::before {
             background-color: @light;
             cursor: not-allowed;
@@ -2492,7 +2398,7 @@ table.dataTable thead .sorting:after {
 }
 
 .checkbox-primary {
-    input[type="checkbox"]:checked+label {
+    input[type="checkbox"]:checked + label {
         &::before {
             background-color: @primary;
             border-color: @primary;
@@ -2504,7 +2410,7 @@ table.dataTable thead .sorting:after {
 }
 
 .checkbox-danger {
-    input[type="checkbox"]:checked+label {
+    input[type="checkbox"]:checked + label {
         &::before {
             background-color: @danger;
             border-color: @danger;
@@ -2516,7 +2422,7 @@ table.dataTable thead .sorting:after {
 }
 
 .checkbox-info {
-    input[type="checkbox"]:checked+label {
+    input[type="checkbox"]:checked + label {
         &::before {
             background-color: @info;
             border-color: @info;
@@ -2528,7 +2434,7 @@ table.dataTable thead .sorting:after {
 }
 
 .checkbox-warning {
-    input[type="checkbox"]:checked+label {
+    input[type="checkbox"]:checked + label {
         &::before {
             background-color: @warning;
             border-color: @warning;
@@ -2540,7 +2446,7 @@ table.dataTable thead .sorting:after {
 }
 
 .checkbox-success {
-    input[type="checkbox"]:checked+label {
+    input[type="checkbox"]:checked + label {
         &::before {
             background-color: @success;
             border-color: @success;
@@ -2552,7 +2458,7 @@ table.dataTable thead .sorting:after {
 }
 
 .checkbox-purple {
-    input[type="checkbox"]:checked+label {
+    input[type="checkbox"]:checked + label {
         &::before {
             background-color: @purple;
             border-color: @purple;
@@ -2564,7 +2470,7 @@ table.dataTable thead .sorting:after {
 }
 
 .checkbox-red {
-    input[type="checkbox"]:checked+label {
+    input[type="checkbox"]:checked + label {
         &::before {
             background-color: @danger;
             border-color: @danger;
@@ -2576,7 +2482,7 @@ table.dataTable thead .sorting:after {
 }
 
 .checkbox-inverse {
-    input[type="checkbox"]:checked+label {
+    input[type="checkbox"]:checked + label {
         &::before {
             background-color: @inverse;
             border-color: @inverse;
@@ -2639,18 +2545,18 @@ table.dataTable thead .sorting:after {
         opacity: 0;
         z-index: 1;
         outline: none !important;
-        &:disabled+label {
+        &:disabled + label {
             opacity: 0.65;
         }
     }
-    input[type="radio"]:focus+label {
+    input[type="radio"]:focus + label {
         &::before {
             outline-offset: -2px;
             outline: 5px auto -webkit-focus-ring-color;
             outline: thin dotted;
         }
     }
-    input[type="radio"]:checked+label {
+    input[type="radio"]:checked + label {
         &::after {
             -ms-transform: scale(1, 1);
             -o-transform: scale(1, 1);
@@ -2658,7 +2564,7 @@ table.dataTable thead .sorting:after {
             transform: scale(1, 1);
         }
     }
-    input[type="radio"]:disabled+label {
+    input[type="radio"]:disabled + label {
         &::before {
             cursor: not-allowed;
         }
@@ -2676,12 +2582,12 @@ table.dataTable thead .sorting:after {
 }
 
 .radio-primary {
-    input[type="radio"]+label {
+    input[type="radio"] + label {
         &::after {
             background-color: @primary;
         }
     }
-    input[type="radio"]:checked+label {
+    input[type="radio"]:checked + label {
         &::before {
             border-color: @primary;
         }
@@ -2692,12 +2598,12 @@ table.dataTable thead .sorting:after {
 }
 
 .radio-danger {
-    input[type="radio"]+label {
+    input[type="radio"] + label {
         &::after {
             background-color: @danger;
         }
     }
-    input[type="radio"]:checked+label {
+    input[type="radio"]:checked + label {
         &::before {
             border-color: @danger;
         }
@@ -2708,12 +2614,12 @@ table.dataTable thead .sorting:after {
 }
 
 .radio-info {
-    input[type="radio"]+label {
+    input[type="radio"] + label {
         &::after {
             background-color: @info;
         }
     }
-    input[type="radio"]:checked+label {
+    input[type="radio"]:checked + label {
         &::before {
             border-color: @info;
         }
@@ -2724,12 +2630,12 @@ table.dataTable thead .sorting:after {
 }
 
 .radio-warning {
-    input[type="radio"]+label {
+    input[type="radio"] + label {
         &::after {
             background-color: @warning;
         }
     }
-    input[type="radio"]:checked+label {
+    input[type="radio"]:checked + label {
         &::before {
             border-color: @warning;
         }
@@ -2740,12 +2646,12 @@ table.dataTable thead .sorting:after {
 }
 
 .radio-success {
-    input[type="radio"]+label {
+    input[type="radio"] + label {
         &::after {
             background-color: @success;
         }
     }
-    input[type="radio"]:checked+label {
+    input[type="radio"]:checked + label {
         &::before {
             border-color: @success;
         }
@@ -2756,12 +2662,12 @@ table.dataTable thead .sorting:after {
 }
 
 .radio-purple {
-    input[type="radio"]+label {
+    input[type="radio"] + label {
         &::after {
             background-color: @purple;
         }
     }
-    input[type="radio"]:checked+label {
+    input[type="radio"]:checked + label {
         &::before {
             border-color: @purple;
         }
@@ -2772,12 +2678,12 @@ table.dataTable thead .sorting:after {
 }
 
 .radio-red {
-    input[type="radio"]+label {
+    input[type="radio"] + label {
         &::after {
             background-color: @danger;
         }
     }
-    input[type="radio"]:checked+label {
+    input[type="radio"]:checked + label {
         &::before {
             border-color: @danger;
         }
@@ -2984,4 +2890,97 @@ ul.common li {
             color: @info;
         }
     }
+}
+
+
+/********** Card Background colors **********/
+
+.card-primary {
+    background-color: @primary;
+    border-color: @primary;
+}
+
+.card-success {
+    background-color: @success;
+    border-color: @success;
+}
+
+.card-info {
+    background-color: @info;
+    border-color: @info;
+}
+
+.card-warning {
+    background-color: @warning;
+    border-color: @warning;
+}
+
+.card-danger {
+    background-color: @danger;
+    border-color: @danger;
+}
+
+.card-secondary {
+    background-color: @inverse;
+    border-color: @inverse;
+}
+
+.card-red {
+    background-color: @red;
+    border-color: @red;
+}
+
+.card-blue {
+    background-color: @blue;
+    border-color: @blue;
+}
+
+.card-purple {
+    background-color: @purple;
+    border-color: @purple;
+}
+
+.card-megna {
+    background-color: @megna;
+    border-color: @megna;
+}
+
+.card-outline-primary {
+    border-color: @primary;
+}
+
+.card-outline-success {
+    border-color: @success;
+}
+
+.card-outline-info {
+    border-color: @info;
+}
+
+.card-outline-warning {
+    border-color: @warning;
+}
+
+.card-outline-danger {
+    border-color: @danger;
+}
+
+.card-outline-secondary {
+    border-color: @inverse;
+}
+
+.card-outline-red {
+    border-color: @red;
+}
+
+.card-outline-blue {
+    border-color: @blue;
+}
+
+.card-outline-purple {
+    border-color: @purple;
+}
+
+.card-outline-megna {
+    border-color: @megna;
 }
