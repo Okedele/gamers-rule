@@ -1,0 +1,27 @@
+{
+  "name": "gamers-rule",
+  "version": "1.0.0",
+  "description": "A web application to help tabletop rpg players create characters and games based on custom rules",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Okedele/gamers-rule.git"
+  },
+  "keywords": [
+    "tabletop",
+    "rpg"
+  ],
+  "author": "Analobei Chibueze & Okedele Promise",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Okedele/gamers-rule/issues"
+  },
+  "homepage": "https://github.com/Okedele/gamers-rule#readme",
+  "dependencies": {
+    "express": "^4.16.4",
+    "mongoose": "^5.4.5"
+  }
+}

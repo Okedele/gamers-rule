@@ -4611,7 +4611,7 @@ table.focus-on tbody tr.focused th {
 }
 
 .login-box {
-    background: rgba(120, 130, 140, .13);
+    background: rgba(120, 130, 140, .25);
     width: 400px;
     margin: 10% auto 0
 }
