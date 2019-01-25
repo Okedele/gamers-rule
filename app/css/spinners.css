@@ -40,9 +40,3 @@
 @-moz-keyframes cssload-spin {
   100%{ -moz-transform: rotate(360deg); transform: rotate(360deg); }
 }
-
-
-pre{
-    
-    border:1px solid #dadada;
-}

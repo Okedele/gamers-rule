@@ -196,17 +196,16 @@ $(document).ready(function () {
     $('.slimscrollsidebar').slimScroll({
         height: '100%',
         position: 'right',
-        size: "5px",
-        railVisible: true,
+        size: "0px",
         color: '#dcdcdc'
     });
     $('.chat-list').slimScroll({
         height: '100%',
         position: 'right',
-        size: "5px",
+        size: "0px",
         color: '#dcdcdc'
     });
-    
+
     /* ===== Resize all elements ===== */
 
     body.trigger("resize");

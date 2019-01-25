@@ -1,150 +1,145 @@
 
 
 // Dashboard 1 Morris-chart
-
-Morris.Area({
-        element: 'morris-area-chart',
-        data: [{
-            period: '2010',
-            iphone: 50,
-            ipad: 80,
-            itouch: 20
-        }, {
-            period: '2011',
-            iphone: 130,
-            ipad: 100,
-            itouch: 80
-        }, {
-            period: '2012',
-            iphone: 80,
-            ipad: 60,
-            itouch: 70
-        }, {
-            period: '2013',
-            iphone: 70,
-            ipad: 200,
-            itouch: 140
-        }, {
-            period: '2014',
-            iphone: 180,
-            ipad: 150,
-            itouch: 140
-        }, {
-            period: '2015',
-            iphone: 105,
-            ipad: 100,
-            itouch: 80
-        },
-         {
-            period: '2016',
-            iphone: 250,
-            ipad: 150,
-            itouch: 200
-        }],
-        xkey: 'period',
-        ykeys: ['iphone', 'ipad', 'itouch'],
-        labels: ['iPhone', 'iPad', 'iPod Touch'],
-        pointSize: 3,
-        fillOpacity: 0,
-        pointStrokeColors:['#00bfc7', '#fb9678', '#9675ce'],
-        behaveLikeLine: true,
-        gridLineColor: '#e0e0e0',
-        lineWidth: 3,
-        hideHover: 'auto',
-        lineColors: ['#00bfc7', '#fb9678', '#9675ce'],
-        resize: true
-        
-    });
-
 Morris.Area({
         element: 'morris-area-chart2',
         data: [{
             period: '2010',
-            SiteA: 0,
-            SiteB: 0,
+            OPD: 0,
+            ICU: 0,
             
         }, {
             period: '2011',
-            SiteA: 130,
-            SiteB: 100,
+            OPD: 130,
+            ICU: 100,
             
         }, {
             period: '2012',
-            SiteA: 80,
-            SiteB: 60,
+            OPD: 30,
+            ICU: 60,
             
         }, {
             period: '2013',
-            SiteA: 70,
-            SiteB: 200,
+            OPD: 30,
+            ICU: 200,
             
         }, {
             period: '2014',
-            SiteA: 180,
-            SiteB: 150,
+            OPD: 200,
+            ICU: 150,
             
         }, {
             period: '2015',
-            SiteA: 105,
-            SiteB: 90,
+            OPD: 105,
+            ICU: 90,
             
         },
          {
             period: '2016',
-            SiteA: 250,
-            SiteB: 150,
+            OPD: 250,
+            ICU: 150,
            
         }],
         xkey: 'period',
-        ykeys: ['SiteA', 'SiteB'],
-        labels: ['Site A', 'Site B'],
+        ykeys: ['OPD', 'ICU'],
+        labels: ['OPD $', 'ICU $'],
         pointSize: 0,
         fillOpacity: 0.4,
-        pointStrokeColors:['#b4becb', '#01c0c8'],
+        pointStrokeColors:['#b4becb', '#00c292'],
         behaveLikeLine: true,
         gridLineColor: '#e0e0e0',
         lineWidth: 0,
         smooth: false,
         hideHover: 'auto',
-        lineColors: ['#b4becb', '#01c0c8'],
+        lineColors: ['#b4becb', '#00c292'],
+        resize: true
+        
+    });
+Morris.Bar({
+        element: 'morris-area-chart1',
+        data: [{
+            period: '2010',
+            OPD: 40,
+            ICU: 50,
+            
+        }, {
+            period: '2011',
+            OPD: 130,
+            ICU: 100,
+            
+        }, {
+            period: '2012',
+            OPD: 30,
+            ICU: 60,
+            
+        }, {
+            period: '2013',
+            OPD: 30,
+            ICU: 200,
+            
+        }, {
+            period: '2014',
+            OPD: 200,
+            ICU: 150,
+            
+        }, {
+            period: '2015',
+            OPD: 105,
+            ICU: 90,
+            
+        },
+         {
+            period: '2016',
+            OPD: 250,
+            ICU: 150,
+           
+        }],
+        xkey: 'period',
+        ykeys: ['OPD', 'ICU'],
+        labels: ['OPD', 'ICU'],
+        pointSize: 0,
+       
+        pointStrokeColors:['#469fb4', '#01c0c8'],
+        barColors:['#469fb4', '#01c0c8'],
+        behaveLikeLine: true,
+        gridLineColor: '#e0e0e0',
+        lineWidth: 0,
+        smooth: false,
+        hideHover: 'auto',
+        lineColors: ['#469fb4', '#01c0c8'],
         resize: true
         
     });
 
  
- $('.vcarousel').carousel({
-            interval: 3000
-         })
-$(".counter").counterUp({
-        delay: 100,
-        time: 1200
-    });
-
-$(document).ready(function() {
-    
-   var sparklineLogin = function() { 
-        $('#sales1').sparkline([20, 40, 30], {
-            type: 'pie',
-            height: '90',
-            resize: true,
-            sliceColors: ['#01c0c8', '#7d5ab6', '#ffffff']
+$("#sparkline8").sparkline([2,4,4,6,8,5,6,4,8,6,6,2 ], {
+            type: 'line',
+            width: '100%',
+            height: '130',
+            lineColor: '#00c292',
+            fillColor: 'rgba(0, 194, 146, 0.2)',
+            maxSpotColor: '#00c292',
+            highlightLineColor: 'rgba(0, 0, 0, 0.2)',
+            highlightSpotColor: '#00c292'
         });
-        $('#sparkline2dash').sparkline([6, 10, 9, 11, 9, 10, 12], {
-            type: 'bar',
-            height: '154',
-            barWidth: '4',
-            resize: true,
-            barSpacing: '10',
-            barColor: '#25a6f7'
+        $("#sparkline9").sparkline([2,4,8,6,8,5,6,4,8,6,6,2 ], {
+            type: 'line',
+            width: '100%',
+            height: '130',
+            lineColor: '#03a9f3',
+            fillColor: 'rgba(3, 169, 243, 0.2)',
+            minSpotColor:'#03a9f3',
+            maxSpotColor: '#03a9f3',
+            highlightLineColor: 'rgba(0, 0, 0, 0.2)',
+            highlightSpotColor: '#03a9f3'
         });
-        
-   }
-    var sparkResize;
- 
-        $(window).resize(function(e) {
-            clearTimeout(sparkResize);
-            sparkResize = setTimeout(sparklineLogin, 500);
+        $("#sparkline10").sparkline([2,4,4,6,8,5,6,4,8,6,6,2], {
+            type: 'line',
+            width: '100%',
+            height: '130',
+            lineColor: '#fb9678',
+            fillColor: 'rgba(251, 150, 120, 0.2)',
+            maxSpotColor: '#fb9678',
+            highlightLineColor: 'rgba(0, 0, 0, 0.2)',
+            highlightSpotColor: '#fb9678'
         });
-        sparklineLogin();
-
-});
