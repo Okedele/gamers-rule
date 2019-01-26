@@ -22,7 +22,7 @@ let usercontroller = require("./Controllers/user.controller");
 
 //server magic
 app.get('/',function(req,res){
-    res.sendFile("/login2.html",{root : __dirname+"/app"});
+    res.sendFile("/index.html",{root : __dirname+"/app"});
 })
 app.use('/user',usercontroller);
 
