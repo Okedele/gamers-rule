@@ -107,35 +107,53 @@
     <!--Style Switcher -->
     <script src="../plugins/bower_components/styleswitcher/jQuery.style.switcher.js"></script>
     <script>
-        function signup(event) {
-            event.preventDefault();
-            let _name = $("#name").val();
-            let _email = $("#email").val();
-            let _password = $("#password").val();
-            let _otherpasword = $("#confirmpassword").val();
-            let _account = {
-                name: _name,
-                email: _email,
-                password: _password,
-                otherpassword: _otherpasword
-            }
-            if (!$("#checkbox-signup").val()) {
-                alert("terms and conditions not accepted");
-
-            } else {
+        //Promise based http request, read documentation in dashboard.html to know why
+        function PostData(body,server_url) {
+            return new Promise(function(resolve,reject){
                 $.ajax({
-                        data: {account:_account},
-                        type: "POST",
-                        url: '/user/create',
-                    })
-                    .done(function (res) {
-                        alert(res);
-                    })
-                    .fail(function (jqXHR, textStatus, err) {
-                        alert(jqXHR.responseText);
-                    })
-            }
+                    data: body,
+                    url: server_url,
+                    type: "POST",
+                    success:function(data,textstatus,jqxhr){
+                        resolve(data);
+                    },
+                    error:function(jqxhr,txtstatus,err){
+                        reject(Error(err));
+                    }
+                    
+                })
+ 
+            })
         }
+        // sample usage
+
+        // function signup(event) {
+        //     event.preventDefault();
+        //     let _name = $("#name").val();
+        //     let _email = $("#email").val();
+        //     let _password = $("#password").val();
+        //     let _otherpasword = $("#confirmpassword").val();
+        //     let _account = {
+        //         name: _name,
+        //         email: _email,
+        //         password: _password,
+        //         otherpassword: _otherpasword
+        //     }
+            //check box confirmation..
+        //     if (!Boolean($("#checkbox-signup").attr('checked'))) {
+        //         alert("terms and conditions not accepted");
+
+        //     } else {
+        //         PostData(_account,'/user/create')
+        //         .then(function(response){
+                    //Handle signup sucessfullness
+                    //p.s i do not send data of user here
+        //         })
+        //         .catch(function (err_msg) { 
+                    //echo back server error on sent body data/network problem
+        //          })   
+        //     }
+        // }
     </script>
 </body>
 
